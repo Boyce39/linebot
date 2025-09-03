@@ -9,9 +9,9 @@ import time
 import threading
 import requests
 
-# ✅ LINE API 金鑰
-LINE_CHANNEL_ACCESS_TOKEN = "qZrFoKUes7yYKs3Dh/SGt8s2yF/UnA7bDTZ96hW/xJ610onNflC3kmdrOfFSX/z2gWyo0psGCkZrtX544IFTkELcBaZkin9Ss0mP4TuqCE0pbAM69wMqQ2b0q6aHuJ62zq1evgXmn9rjf3IrFOj4sQdB04t89/1O/w1cDnyilFU="
-LINE_CHANNEL_SECRET = "a679bfc30ba462f06c19c8ab58a5b869"
+#  LINE API 金鑰
+LINE_CHANNEL_ACCESS_TOKEN = ""
+LINE_CHANNEL_SECRET = ""
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -111,5 +111,6 @@ if __name__ == "__main__":
     ngrok_thread = threading.Thread(target=start_ngrok)
     ngrok_thread.start()
     app.run(port=5000, debug=True)
+
 
 #pyinstaller --onefile --name=linebot_app --hidden-import=requests --hidden-import=linebot testin.py
