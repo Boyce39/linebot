@@ -18,7 +18,7 @@
 
 ---
 
-## ⚠️ 安全性警告
+## ⚠️ 可存在的資安風險
 
 目前的程式碼 (`LINEbotv1.py`) 將 `LINE_CHANNEL_ACCESS_TOKEN` 和 `LINE_CHANNEL_SECRET` **直接寫在程式碼中**。這是一種不安全的做法，可能會導致您的金鑰外洩。
 
